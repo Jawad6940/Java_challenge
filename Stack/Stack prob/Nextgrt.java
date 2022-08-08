@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Stack;
 
 public class Nextgrt {
     public static void main(String[] args) {
@@ -8,14 +9,14 @@ public class Nextgrt {
      int ans[] = new int [n];
      for(int i=0;i<n;i++) arr[i]= sc.nextInt();
     
-        Stack <Integer> st = new Stack<>();
+        Stack<Integer> st=new Stack<>();
     //   
        
     //  for(int i=0; i<n; i++){
             
     //     while(!st.isEmpty()&&(arr[st.peek()]<arr[i])){
     //       int x=st.pop();
-    //         ans[x] = arr[x];
+    //         ans[x] = arr[i];
     //     }
     //     st.push(i);
     // }
@@ -24,7 +25,7 @@ public class Nextgrt {
     for(int i=n-1; i>=0; i--){
         if(st.isEmpty()||st.peek()<=arr[i]) ans[i]=-1;
         while(!st.isEmpty()){
-            if((st.peek()<arr[i])){
+            if((st.peek()>arr[i])){
                 ans[i]= st.peek();
             break;
         }
