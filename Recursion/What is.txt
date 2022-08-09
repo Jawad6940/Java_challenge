@@ -1,0 +1,30 @@
+What is Recurrence?
+● The literal meaning of the word Recurrence means something that occurs again and again.
+● In programming terms, recurrence is an equation or inequality that describes a function in terms of its value on smaller inputs.
+
+For example, for binary search, we have to break the array into two halves again and again so the recurrence relation for that is :
+
+T(n) = T(n/2) + 1
+
+In this article we are going to solve recurrence relation with the help of the recursive tree method, let’s discuss what is the recursive tree is:
+
+What is the Recursion Tree Method & How does it Work?
+
+● The recursion-tree method converts the recurrence into a tree whose nodes represent the costs incurred at various levels of the recursion.
+● This tree is a way of representing the algorithm’s iteration in the shape of a tree, with each node representing the tree’s iteration level.
+● We use techniques for summations to solve the recurrence.
+
+How does it work?
+
+● We sum the costs within each level of the tree to obtain a set of per-level costs.
+● Then we sum all the per-level costs to determine the total cost of all levels of the recursion.
+
+ Types Of Problem We can solve using the Recursion Tree Method:
+
+● Cost Of Root Node will Maximum.
+● Cost Of Each Level is Same.
+● Cost Of Leaf Node Will be Maximum.
+
+
+
+
