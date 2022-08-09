@@ -36,7 +36,7 @@ public class NextSmall {
     }
     
     for (Integer x : ans) {
-        System.out.print(x+" ");
+        
     }
     }
 }
