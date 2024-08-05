@@ -8,6 +8,7 @@ class Node{
     }
 }
 public class LLQueue {
+
     Node front,rear;
 
     void enqueue(int x){
